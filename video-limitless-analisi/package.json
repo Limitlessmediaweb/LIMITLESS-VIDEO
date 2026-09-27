@@ -1,0 +1,25 @@
+{
+  "name": "video-limitless-analisi",
+  "version": "1.0.0",
+  "description": "LIMITLESS — video \"analisi\" in stile dashboard (GSAP + CDP screencast)",
+  "scripts": {
+    "globe": "node tools/build-globe.js",
+    "record": "node tools/record.js",
+    "encode": "bash tools/encode.sh",
+    "verify": "node tools/verify.js",
+    "video": "npm run record && npm run encode && npm run verify",
+    "preview": "echo 'Apri src/index.html nel browser. Aggiungi ?t=12 per fermarti a un istante.'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "d3-geo": "^3.1.1",
+    "gsap": "^3.15.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "private": true
+}
