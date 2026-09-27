@@ -25,7 +25,7 @@ const CONTENT = {
     // riquadro della foto nel video (px). 900x1125 = 4:5
     box: [90, 250, 900, 1125],
     // riquadro della casa nella foto (frazioni: x1, y1, x2, y2) → frame del reticolo
-    house: [0.12, 0.26, 0.88, 0.78],
+    house: [0.16, 0.31, 0.87, 0.61],
   },
 
   subject: {
@@ -48,10 +48,10 @@ const CONTENT = {
   //  count  = numero che conta da 0 (sostituisce {n} in `main`); ometti se non serve
   //  viz    = 'energy' mostra la scala A→G con la classe evidenziata
   specs: [
-    { meta: 'SUPERFICIE', count: 180, main: '{n} MQ', sub: 'SU 2 LIVELLI', anchor: [0.36, 0.30], card: [110, 312], side: 'above' },
-    { meta: 'AMBIENTI', count: 4, main: '{n} CAMERE', sub: '3 BAGNI', anchor: [0.74, 0.50], card: [560, 312], side: 'above' },
-    { meta: 'EFFICIENZA', main: 'CLASSE A', sub: 'CLASSE ENERGETICA', viz: 'energy', energy: 'A', anchor: [0.50, 0.66], card: [110, 1128], side: 'below' },
-    { meta: 'ESTERNO', count: 500, main: '{n} MQ', sub: 'GIARDINO', anchor: [0.80, 0.86], card: [560, 1128], side: 'below' },
+    { meta: 'SUPERFICIE', count: 180, main: '{n} MQ', sub: 'SU 2 LIVELLI', anchor: [0.30, 0.368], card: [110, 312], side: 'above' },
+    { meta: 'AMBIENTI', count: 4, main: '{n} CAMERE', sub: '3 BAGNI', anchor: [0.645, 0.405], card: [560, 312], side: 'above' },
+    { meta: 'EFFICIENZA', main: 'CLASSE A', sub: 'CLASSE ENERGETICA', viz: 'energy', energy: 'A', anchor: [0.478, 0.545], card: [160, 1180], side: 'below' },
+    { meta: 'ESTERNO', count: 500, main: '{n} MQ', sub: 'GIARDINO', anchor: [0.625, 0.75], card: [560, 1180], side: 'below' },
   ],
 
   // Posizione: globo wireframe → zoom sull'Italia → isocrone attorno all'immobile.

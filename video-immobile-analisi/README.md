@@ -6,11 +6,9 @@ c'è un'unica foto ferma della villa e sopra compaiono, uno dopo l'altro, scansi
 dati, posizione su mappa e prezzo. Lo stile è quello dei video Nòttea e LIMITLESS
 (`../video-limitless-analisi`), da cui questo progetto riprende pipeline e strumenti.
 
-> **Foto attuale = segnaposto.** La foto della villa è stata generata con Higgsfield (GPT Image 2.5,
-> 4:5, 2k, luce calda al tramonto), ma la rete di questo ambiente non ha potuto scaricarla: il
-> proxy blocca l'host `d8j0ntlcm91z4.cloudfront.net`. `assets/villa.jpg` è quindi un'illustrazione
-> provvisoria con scritto "SEGNAPOSTO". Per il video vero: metti la foto in `assets/villa.jpg`,
-> ritocca `photo.house` e gli `anchor` in `content.js` (vedi sotto) e lancia `npm run video`.
+La foto della villa (`assets/villa.jpg`, 1600×2000) è stata generata con Higgsfield (GPT Image 2.5,
+4:5, qualità alta, luce calda al tramonto, stile fotografia immobiliare) ed è inventata come
+l'immobile. I callout puntano a tetto, finestra del primo piano, portone e prato.
 
 | File | Cosa è |
 |---|---|
@@ -79,8 +77,8 @@ quell'istante.
 2. **Cattura con CDP `Page.startScreencast`**, non con `recordVideo`. Viewport 540×960 con
    `deviceScaleFactor: 2`, PNG a 1080×1920. Serve anche il flag `--force-device-scale-factor=2`:
    senza, lo screencast headless restituisce frame a 540×960. La timeline GSAP gira a
-   **timeScale 0,1** (180 s reali per 18 s di video), così si ottengono circa 300 frame per secondo
-   di timeline.
+   **timeScale 0,1** (180 s reali per 18 s di video), così si ottengono circa 200–300 frame per secondo
+   di timeline, a seconda del peso della foto.
 3. **Rimappatura del tempo**: ogni frame viene riportato sulla timeline con
    `(timestamp CDP − istante di play) × timeScale`. Le durate esatte finiscono in
    `build/frames.ffconcat`.
