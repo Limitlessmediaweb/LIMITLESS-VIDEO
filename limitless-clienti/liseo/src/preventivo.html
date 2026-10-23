@@ -126,11 +126,24 @@ ul.list b { font-weight: 600; }
 .cb { width: 3.6mm; height: 3.6mm; border: 0.9pt solid var(--ink); border-radius: 0.6mm; flex: none; }
 .lines { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 6mm; margin-top: 7mm; font-size: 8pt; color: var(--mute); }
 .lines div { border-top: 0.7pt solid var(--ink); padding-top: 1.2mm; }
+.page { padding: 14mm 16mm 11mm; }
+.intro { margin-top: 6mm; font-size: 11pt; }
+h2 { margin: 6.5mm 0 3mm; }
+.packs { margin-top: 2mm; gap: 4mm; }
+.pack { padding: 5mm 4.4mm 4.4mm; }
+.pack h3 { font-size: 12pt; }
+.pack ul { font-size: 10pt; line-height: 1.45; }
+.pack li { padding: 1.1mm 0 1.1mm 3.6mm; }
+.pack li::before { top: 2.9mm; }
+.price .big { font-size: 22pt; }
+ul.list { font-size: 10pt; }
+ul.list li { padding: 1mm 0 1mm 3.6mm; }
+ul.list li::before { top: 3mm; }
+.iva { margin-top: 5mm; }
+.sign { margin-top: 6mm; }
 </style>
 </head>
 <body>
-
-<!-- ======================= PAGINA 1 ======================= -->
 <section class="page" id="p1">
   <div class="head">
     <div class="brand">LIMITLESS<small>di Riccardo Pasquini · Miradolo Terme (PV) · P.IVA 03051470189</small></div>
@@ -140,110 +153,68 @@ ul.list b { font-weight: 600; }
   <div class="meta">
     <div>
       <h1>Gestione <em>social</em></h1>
-      <div class="for">Listino e preventivo per <b>Cantina Liseo</b> · Stefano Sbop</div>
+      <div class="for">Preventivo per <b>Cantina Liseo</b> · Stefano Sbop</div>
     </div>
-    <div class="docinfo">Preventivo <b>n. 2026-01</b><br>Data <b>23/10/2026</b><br>Valido 15 giorni, fino al <b>07/11/2026</b></div>
+    <div class="docinfo">Preventivo <b>n. 2026-01</b><br>Data <b>23/10/2026</b><br>Valido fino al <b>07/11/2026</b></div>
   </div>
 
-  <p class="intro">Pacchetti mensili per Instagram, Facebook e TikTok, realizzati con le foto e i video che ci mandate.
-  Prepariamo il piano, montiamo i contenuti e li pubblichiamo noi.</p>
+  <p class="intro">Voi ci mandate foto e video, noi creiamo i contenuti e li pubblichiamo.</p>
 
-  <h2>I pacchetti mensili</h2>
+  <h2>Pacchetti mensili</h2>
   <div class="packs">
     <div class="pack">
       <h3>ESSENZIALE</h3>
-      <div class="who">Per esserci con costanza.</div>
       <ul>
-        <li>6 contenuti: 4 reel + 2 post</li>
-        <li>IG e FB, reel anche su TikTok</li>
-        <li>Piano mensile da approvare</li>
-                <li>Riepilogo con 3 numeri</li>
+        <li>6 contenuti al mese</li>
+        <li>Instagram, Facebook, TikTok</li>
+        <li>Piano mensile</li>
       </ul>
-      <div class="price"><s>249 €/mese</s><div class="big">199 € <small>/mese</small></div><div class="tag">prezzo lancio, primi 3 mesi</div></div>
+      <div class="price"><s>249 €/mese</s><div class="big">199 € <small>/mese</small></div></div>
     </div>
     <div class="pack rec">
       <div class="badge">CONSIGLIATO</div>
       <h3>SOCIAL</h3>
-      <div class="who">Per farsi conoscere e crescere.</div>
       <ul>
-        <li>8 contenuti: 6 reel + 2 caroselli</li>
+        <li>8 contenuti al mese</li>
         <li>Instagram, Facebook, TikTok</li>
-        <li>1 storia a settimana</li>
-        <li>Commenti 2 volte a settimana</li>
-        <li>Piano mensile da approvare</li>
-        <li>Report mensile breve</li>
+        <li>Storie e risposte ai commenti</li>
+        <li>Piano e report mensile</li>
       </ul>
-      <div class="price"><s>449 €/mese</s><div class="big">349 € <small>/mese</small></div><div class="tag">prezzo lancio, primi 3 mesi</div></div>
+      <div class="price"><s>449 €/mese</s><div class="big">349 € <small>/mese</small></div></div>
     </div>
     <div class="pack">
       <h3>CRESCITA</h3>
-      <div class="who">Per spingere vendite e visite.</div>
       <ul>
-        <li>12 contenuti, incluso 1 spot</li>
+        <li>12 contenuti al mese, con 1 spot</li>
         <li>Instagram, Facebook, TikTok</li>
-        <li>2 storie a settimana</li>
-        <li>Commenti 3 volte a settimana</li>
-        <li>Sponsorizzate (budget escluso)</li>
-        <li>Report + call di 20 minuti</li>
+        <li>Storie e risposte ai commenti</li>
+        <li>Gestione sponsorizzate</li>
       </ul>
-      <div class="price"><s>799 €/mese</s><div class="big">649 € <small>/mese</small></div><div class="tag">prezzo lancio, primi 3 mesi</div></div>
+      <div class="price"><s>799 €/mese</s><div class="big">649 € <small>/mese</small></div></div>
     </div>
   </div>
-  <div class="boxnote"><b>Avvio incluso</b> se confermate entro il 07/11/2026 (valore 149 €): sistemazione dei profili, grafica coordinata, piano del primo mese.<br>
-  <b>Dal 4° mese</b> prezzo di listino, mese per mese, oppure prezzo bloccato con impegno di altri 6 mesi: 229 € · 399 € · 729 €.</div>
-
-  <h2>Extra, solo se servono</h2>
-  <table class="extra">
-    <tr><td>Contenuto in più (reel o post)</td><td>39 €</td></tr>
-    <tr><td>Spot in più di 20–30", dal vostro materiale</td><td>99 €</td></tr>
-    <tr><td>Campagna sponsorizzata singola (budget escluso)</td><td>79 €</td></tr>
-    <tr><td>Giornata di riprese sul posto</td><td>su preventivo</td></tr>
-  </table>
-
-  <div class="foot"><span>LIMITLESS · Preventivo 2026-01 · Cantina Liseo</span><span>1 / 2</span></div>
-</section>
-
-<!-- ======================= PAGINA 2 ======================= -->
-<section class="page" id="p2">
-  <div class="head">
-    <div class="brand">LIMITLESS<small>di Riccardo Pasquini · Miradolo Terme (PV) · P.IVA 03051470189</small></div>
-    <div class="contacts"><b>+39 339 795 8873</b> · limitlessmediaweb@gmail.com<br>PEC info@pec.limitlessmedia.it · <b>limitlessmedia.it</b></div>
-  </div>
-
-  <h2 style="margin-top:6mm">Come lavoriamo</h2>
-  <ul class="list">
-    <li><b>Materiale:</b> foto e video li mandate voi, anche dal telefono, entro il 25 del mese prima. Vi diciamo noi cosa riprendere.</li>
-    <li><b>Piano mensile da approvare:</b> calendario con idee, testi e date. Si pubblica solo dopo il vostro ok; 1 giro di modifiche sul piano e 1 su ogni contenuto.</li>
-    <li><b>Accessi:</b> Instagram e Facebook con Meta Business Suite, LIMITLESS aggiunta come partner: nessuna password condivisa, accesso revocabile quando volete. TikTok con una modalità concordata insieme. I messaggi privati restano a voi.</li>
-    <li><b>Uso dell'AI dichiarato:</b> strumenti di intelligenza artificiale per montaggio, sottotitoli e bozze dei testi; ogni contenuto è controllato a mano. Niente immagini dei vostri prodotti o luoghi generate con l'AI e spacciate per vere.</li>
-  </ul>
+  <div class="boxnote"><b>Prezzo lancio</b> per i primi 3 mesi. <b>Avvio incluso</b> (sistemazione profili e grafica, valore 149 €) se confermate entro il 07/11/2026.</div>
 
   <h2>Condizioni</h2>
   <ul class="list">
-    <li><b>Durata minima 3 mesi</b>, poi mese per mese; disdetta con 30 giorni di preavviso, anche su WhatsApp.</li>
-    <li><b>Pagamento mensile anticipato:</b> il primo mese si paga alla conferma e vale come acconto; i successivi entro il 5 del mese.</li>
-    <li><b>Contenuti:</b> restano utilizzabili da voi sui vostri canali, anche dopo la fine del servizio. <b>Il materiale che ci mandate resta di vostra proprietà</b> e lo usiamo solo per i vostri canali.</li>
-    <li>L'eventuale budget delle sponsorizzate è escluso e si paga direttamente a Meta o TikTok.</li>
+    <li>Durata minima 3 mesi, poi mese per mese.</li>
+    <li>Pagamento mensile anticipato: il primo mese alla conferma.</li>
+    <li>Accesso ai profili tramite Meta Business Suite, senza condividere password.</li>
+    <li>I contenuti restano vostri e potete usarli come volete.</li>
   </ul>
-  <div class="guar"><b>Garanzia sull'avvio:</b> se il piano del primo mese non vi convince nemmeno dopo una revisione, vi restituiamo il primo mese e ci fermiamo lì.</div>
   <div class="iva">Operazione in franchigia IVA effettuata ai sensi dell'art. 1, commi 54-89, L. 190/2014 (regime forfettario). IVA non applicabile.</div>
 
   <div class="sign">
     <h3>Accettazione</h3>
     <div class="choices">
-      <span class="choice"><i class="cb"></i>Essenziale 199 €/mese</span>
-      <span class="choice"><i class="cb"></i>Social 349 €/mese</span>
-      <span class="choice"><i class="cb"></i>Crescita 649 €/mese</span>
+      <span class="choice"><i class="cb"></i>Essenziale</span>
+      <span class="choice"><i class="cb"></i>Social</span>
+      <span class="choice"><i class="cb"></i>Crescita</span>
     </div>
-    <div class="choices" style="margin-top:2.6mm">
-      <span style="color:var(--mute)">Partenza:</span>
-      <span class="choice"><i class="cb"></i>lunedì 3 novembre 2026</span>
-      <span class="choice"><i class="cb"></i>lunedì 10 novembre 2026</span>
-    </div>
-    <div class="lines"><div>Data</div><div>Luogo</div><div>Firma (Stefano Sbop)</div></div>
+    <div class="lines"><div>Data</div><div>Luogo</div><div>Firma</div></div>
   </div>
 
-  <div class="foot"><span>LIMITLESS · Preventivo 2026-01 · Cantina Liseo</span><span>2 / 2</span></div>
+  <div class="foot"><span>LIMITLESS · Preventivo 2026-01 · Cantina Liseo</span><span>limitlessmedia.it</span></div>
 </section>
 </body>
 </html>
