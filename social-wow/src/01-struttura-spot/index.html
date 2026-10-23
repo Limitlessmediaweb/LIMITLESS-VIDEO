@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>LIMITLESS · Uno spot che vende, in tempo reale</title>
+<link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="stage">
+  <div class="dots"></div>
+
+  <!-- hero: titolo + cronometro -->
+  <div id="titleBig" class="title abs" style="top:330px">Uno spot che <i>vende</i><br>dura 15 secondi.</div>
+  <div id="clockWrap" class="abs hide">
+    <div id="clockLabel" class="mono">CRONOMETRO · IN TEMPO REALE</div>
+    <div id="clock" class="mono">00:00.00</div>
+    <div id="titleSmall">Uno spot che vende dura 15 secondi.</div>
+  </div>
+
+  <!-- pannello: il contenuto dello spot -->
+  <div id="panel" class="abs hide">
+    <div class="pbar"><span class="dot"></span><span class="mono">SPOT · CASCINA VALLEROSA · 1080×1920</span><span class="mono" id="pframe">F 000</span></div>
+
+    <div id="bHook" class="block">
+      <div class="glow"></div>
+      <div class="w1 serif">Domenica.</div>
+      <div class="w2">Pranzo in cascina.</div>
+    </div>
+
+    <div id="bProva" class="block">
+      <div class="shot s1"><svg viewBox="0 0 200 120"><circle cx="100" cy="62" r="40"/><circle cx="100" cy="62" r="26"/><path d="M30 20v84M170 20v84"/></svg><div class="lab mono">01 · CUCINA</div></div>
+      <div class="shot s2"><svg viewBox="0 0 200 120"><path d="M20 50h160M40 50v50M160 50v50"/><ellipse cx="70" cy="50" rx="18" ry="6"/><ellipse cx="130" cy="50" rx="18" ry="6"/><path d="M100 50v-28"/></svg><div class="lab mono">02 · TAVOLA</div></div>
+      <div class="shot s3"><svg viewBox="0 0 200 120"><path d="M10 100h180"/><path d="M60 100V60M60 60c-30 0-30-40 0-40 0-20 40-20 40 0 30 0 30 40 0 40"/><path d="M150 100V70M150 70c-20 0-20-26 0-26s20 26 0 26"/></svg><div class="lab mono">03 · CORTILE</div></div>
+      <div class="pnote mono">3 INQUADRATURE · 2 s CIASCUNA</div>
+    </div>
+
+    <div id="bOfferta" class="block">
+      <div class="olab mono">MENÙ DELLA DOMENICA</div>
+      <div class="price mono"><span id="priceNum">0</span><span class="eur"> €</span></div>
+      <div class="odesc">a persona · pranzo completo, vino incluso</div>
+    </div>
+
+    <div id="bCta" class="block">
+      <div class="btn"><span class="ico"></span><span>Prenota su WhatsApp</span><span class="ring"></span></div>
+      <div class="done mono">RICHIESTA INVIATA ✓</div>
+      <div class="wm">CASCINA <i class="serif">Vallerosa</i></div>
+    </div>
+  </div>
+
+  <!-- callout del blocco attivo -->
+  <div id="callout" class="card abs hide">
+    <div class="row"><span class="k" id="cK">01 · HOOK · 0–2 s</span><span class="v" id="cV">Una frase, non il logo.</span></div>
+  </div>
+
+  <!-- righello 0–15 s -->
+  <div id="ruler" class="abs hide">
+    <div class="seg" id="sg1" style="left:0;width:112px"><span>HOOK</span></div>
+    <div class="seg" id="sg2" style="left:112px;width:224px"><span>PROVA</span></div>
+    <div class="seg" id="sg3" style="left:336px;width:224px"><span>OFFERTA</span></div>
+    <div class="seg" id="sg4" style="left:560px;width:280px"><span>CTA</span></div>
+    <div class="ticks" id="ticks"></div>
+    <div class="head" id="head"></div>
+  </div>
+
+  <!-- finale -->
+  <div id="end1" class="title abs hide" style="top:760px">Hai appena visto<br>la struttura di uno spot.</div>
+  <div id="end2" class="title abs hide" style="top:720px">4 blocchi. 15 secondi.<br><i>Salvalo</i> per il prossimo.</div>
+  <div id="endL" class="abs hide mono endl">LIMITLESS · SPOT PER ATTIVITÀ LOCALI</div>
+
+  <!-- sottotitoli -->
+  <div class="sub" id="subs"></div>
+
+  <div class="hud">
+    <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+    <div class="tag">ANALISI · SPOT 15 s</div>
+    <div class="brand">LIMITLESS</div>
+    <div class="tc" id="tc">TC 00:00:00:00</div>
+    <div class="concept">CASCINA VALLEROSA È UN BRAND INVENTATO · CONCEPT</div>
+  </div>
+</div>
+<script src="../shared/gsap.min.js"></script>
+<script src="../shared/common.js"></script>
+<script src="main.js"></script>
+</body></html>

@@ -1,0 +1,51 @@
+#clockWrap{left:90px;right:150px;top:290px;text-align:center}
+#clockLabel{font-size:20px;letter-spacing:.22em;color:var(--fg3);margin-bottom:14px}
+#clock{font-size:132px;line-height:1;font-weight:400;letter-spacing:-.02em;color:var(--fg)}
+#titleSmall{margin-top:16px;font:400 32px/1.2 var(--sans);color:var(--fg2)}
+
+#panel{left:90px;top:540px;width:840px;height:560px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:rgba(242,243,245,.015)}
+#panel .pbar{position:absolute;left:0;right:0;top:0;height:52px;display:flex;align-items:center;gap:14px;padding:0 22px;border-bottom:1px solid var(--line);font-size:17px;letter-spacing:.14em;color:var(--fg3)}
+#panel .pbar .dot{width:10px;height:10px;border-radius:50%;background:#ff5c5c}
+#panel .pbar #pframe{margin-left:auto}
+.block{position:absolute;left:0;right:0;top:52px;bottom:0;opacity:0}
+/* hook */
+#bHook .glow{position:absolute;left:50%;top:60%;width:900px;height:900px;margin:-450px 0 0 -450px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,179,107,.16),rgba(255,179,107,0) 70%)}
+#bHook .w1{position:absolute;left:0;right:0;top:120px;text-align:center;font-size:170px;line-height:1;color:var(--fg)}
+#bHook .w2{position:absolute;left:0;right:0;top:310px;text-align:center;font:300 60px/1 var(--sans);color:var(--fg2);letter-spacing:-.01em}
+/* prova */
+#bProva .shot{position:absolute;top:120px;width:244px;height:220px;border:1px solid var(--line);border-radius:8px;padding:16px;opacity:0}
+#bProva .s1{left:40px}#bProva .s2{left:298px}#bProva .s3{left:556px}
+#bProva svg{width:100%;height:150px;fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+#bProva .lab{font-size:17px;letter-spacing:.14em;color:var(--fg2);margin-top:8px}
+#bProva .pnote{position:absolute;left:0;right:0;top:400px;text-align:center;font-size:18px;letter-spacing:.18em;color:var(--fg3)}
+/* offerta */
+#bOfferta .olab{position:absolute;left:0;right:0;top:92px;text-align:center;font-size:20px;letter-spacing:.22em;color:var(--accent)}
+#bOfferta .price{position:absolute;left:0;right:0;top:150px;text-align:center;font-size:190px;line-height:1;color:var(--fg)}
+#bOfferta .price .eur{font-size:90px;color:var(--fg2)}
+#bOfferta .odesc{position:absolute;left:0;right:0;top:380px;text-align:center;font:300 34px/1.2 var(--sans);color:var(--fg2)}
+/* cta */
+#bCta .btn{position:absolute;left:50%;top:170px;transform:translateX(-50%);display:flex;align-items:center;gap:18px;height:108px;padding:0 54px;border-radius:60px;background:var(--fg);color:#0a0b0d;font:500 38px/1 var(--sans);white-space:nowrap}
+#bCta .btn .ico{width:30px;height:30px;border-radius:50%;border:3px solid #0a0b0d;position:relative}
+#bCta .btn .ico::after{content:"";position:absolute;left:8px;top:8px;width:8px;height:8px;border-radius:50%;background:#0a0b0d}
+#bCta .btn .ring{position:absolute;left:50%;top:50%;width:60px;height:60px;margin:-30px 0 0 -30px;border-radius:50%;border:3px solid var(--accent);opacity:0}
+#bCta .done{position:absolute;left:0;right:0;top:310px;text-align:center;font-size:22px;letter-spacing:.2em;color:var(--ok);opacity:0}
+#bCta .wm{position:absolute;left:0;right:0;top:390px;text-align:center;font:500 30px/1 var(--sans);letter-spacing:.3em;color:var(--fg2);opacity:0}
+#bCta .wm i{letter-spacing:0;font-size:46px;text-transform:none;color:var(--fg);vertical-align:-4px}
+
+#callout{left:90px;width:840px;top:1126px;padding:20px 26px}
+#callout .row{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+#callout .k{margin:0;font-size:19px}
+#callout .v{font-size:34px}
+
+#ruler{left:90px;top:1240px;width:840px;height:120px}
+#ruler .seg{position:absolute;top:0;height:16px;background:rgba(242,243,245,.1);border-right:2px solid var(--bg)}
+#ruler .seg span{position:absolute;left:0;top:26px;font:400 16px/1 var(--mono);letter-spacing:.16em;color:var(--fg3)}
+#ruler .seg .fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--accent)}
+#ruler .ticks{position:absolute;left:0;top:58px;width:840px;height:30px}
+#ruler .ticks i{position:absolute;top:0;width:1px;height:10px;background:var(--fg3)}
+#ruler .ticks b{position:absolute;top:16px;font:400 15px/1 var(--mono);color:var(--fg3);transform:translateX(-50%)}
+#ruler .head{position:absolute;top:-14px;width:2px;height:48px;background:var(--fg);left:0}
+#ruler .head::before{content:"";position:absolute;left:-6px;top:-8px;border:7px solid transparent;border-top:9px solid var(--fg)}
+
+.endl{left:90px;right:150px;top:1010px;text-align:center;font-size:20px;letter-spacing:.26em;color:var(--fg3)}
+body.cover #titleBig{top:560px;font-size:96px}

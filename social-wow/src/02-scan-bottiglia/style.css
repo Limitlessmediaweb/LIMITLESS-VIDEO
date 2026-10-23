@@ -1,0 +1,13 @@
+#cv{position:absolute;left:0;top:0}
+#ov{left:0;top:0;pointer-events:none}
+#ov .dim line,#ov .dim rect,#ov .dim path{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;opacity:.9}
+#ov .dim{opacity:0}
+#ov .ldr path{fill:none;stroke:var(--fg2);stroke-width:1.5;opacity:0}
+#readout{left:90px;right:150px;top:470px;text-align:center;font-size:24px;letter-spacing:.18em;color:var(--fg3)}
+#readout .sep{margin:0 16px;color:var(--fg3)}
+.card{opacity:0;min-width:200px}
+.card .k{font-size:17px}
+.card .v{font-size:30px;line-height:1.15}
+.cl{text-align:left}.cr{text-align:left}
+body.cover #title{top:520px;font-size:100px}
+body.cover #readout{display:none}

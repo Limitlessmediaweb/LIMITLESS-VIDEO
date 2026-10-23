@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><title>LIMITLESS · 22:41, un cliente sta guardando la tua attività</title>
+<link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="stage">
+  <div class="dots"></div>
+
+  <!-- hook -->
+  <div id="hour" class="abs mono">22:41</div>
+  <div id="hookSub" class="abs">Un cliente sta guardando<br>la tua attività.</div>
+
+  <!-- cronometro -->
+  <div id="swWrap" class="abs hide">
+    <div id="swLabel" class="mono">22:41 · TEMPO DI DECISIONE</div>
+    <div id="sw" class="mono">00:00.00</div>
+    <div id="swTag" class="mono hide"><span id="swTagT">PERSO · 3,4 s</span></div>
+    <div id="speed" class="mono hide">×4</div>
+  </div>
+
+  <!-- telefono -->
+  <div id="phone" class="abs">
+    <div class="screen">
+      <div class="sbar mono"><span>22:41</span><span class="sig"><i></i><i></i><i></i><i></i></span></div>
+      <div class="search"><span class="lens"></span><span>agriturismo vicino a me</span></div>
+      <div id="scroll">
+        <div class="bcard" id="cardA">
+          <div class="photo">
+            <div class="ph"><svg viewBox="0 0 64 48"><rect x="4" y="12" width="56" height="32" rx="4"/><circle cx="32" cy="28" r="9"/><path d="M22 12l4-6h12l4 6"/></svg><div class="mono">1 FOTO</div></div>
+            <div class="vid" id="vidA">
+              <div class="frames"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="play"></div><div class="dur mono">0:15</div>
+              <div class="prog"><i id="progA"></i></div>
+            </div>
+          </div>
+          <div class="name">Agriturismo Le Betulle</div>
+          <div class="meta">Agriturismo · 4,2 km · <span class="stars">★★★★</span>☆</div>
+          <div class="row"><span class="dot warn"></span><span class="txt"><span class="before">Orari: non indicati</span><span class="after">Aperto · fino alle 23</span></span><span class="chip warn" id="ch2">ORARI · —</span><span class="chip ok" id="ck2">ORARI · OK</span></div>
+          <div class="row"><span class="dot warn"></span><span class="txt"><span class="before">Foto: 1</span><span class="after">Foto: 24</span></span><span class="chip warn" id="ch1">ULTIMA FOTO · 2019</span><span class="chip ok" id="ck1">FOTO · 24</span></div>
+          <div class="row"><span class="dot warn"></span><span class="txt"><span class="before">Video: nessuno</span><span class="after">Video: 15 s</span></span><span class="chip warn" id="ch3">VIDEO · 0</span><span class="chip ok" id="ck3">VIDEO · 15 s</span></div>
+          <div class="btns"><div class="b">Chiama</div><div class="b">Indicazioni</div><div class="b primary" id="bPrenota">Prenota<span class="ring"></span></div></div>
+          <div class="sent mono" id="sent">RICHIESTA INVIATA ✓</div>
+        </div>
+        <div class="bcard" id="cardB">
+          <div class="photo alt"><div class="vid on"><div class="frames alt"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="play"></div><div class="dur mono">0:20</div></div></div>
+          <div class="name">Trattoria del Ponte</div>
+          <div class="meta">Trattoria · 1,8 km · <span class="stars">★★★★★</span></div>
+          <div class="row"><span class="dot ok"></span><span class="txt"><span class="before">Aperto · fino alle 23</span></span></div>
+          <div class="row"><span class="dot ok"></span><span class="txt"><span class="before">Foto: 61 · Video: 3</span></span></div>
+          <div class="btns"><div class="b">Chiama</div><div class="b">Indicazioni</div><div class="b primary">Prenota</div></div>
+        </div>
+      </div>
+    </div>
+    <div id="dimmer"></div>
+  </div>
+
+  <!-- finale -->
+  <div id="end1" class="title abs hide" style="top:700px">Quanti ne perdi,<br><i>stasera</i>?</div>
+  <div id="end2" class="abs hide">
+    <div class="small">Commenta</div>
+    <div class="word mono">CONTROLLO</div>
+    <div class="desc">Controlliamo <i class="serif">gratis</i> la tua scheda<br>e il tuo profilo. Ti diciamo cosa manca.</div>
+  </div>
+
+  <div class="sub" id="subs"></div>
+  <div class="hud">
+    <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+    <div class="tag">SIMULAZIONE · CLIENTE 01</div>
+    <div class="brand">LIMITLESS</div>
+    <div class="tc" id="tc">TC 00:00:00:00</div>
+    <div class="concept">ATTIVITÀ INVENTATE · CONCEPT LIMITLESS</div>
+  </div>
+</div>
+<script src="../shared/gsap.min.js"></script>
+<script src="../shared/common.js"></script>
+<script src="main.js"></script>
+</body></html>

@@ -1,0 +1,54 @@
+/* Base condivisa dei 3 video LIMITLESS "social-wow". Stage fisso 1080x1920. */
+@font-face{font-family:"Inter";font-weight:300;src:url(fonts/inter-latin-300-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:400;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:400;src:url(fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:500;src:url(fonts/jetbrains-mono-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-weight:400;font-style:normal;src:url(fonts/instrument-serif-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-weight:400;font-style:italic;src:url(fonts/instrument-serif-latin-400-italic.woff2) format("woff2")}
+
+:root{
+  --bg:#07080a; --fg:#f2f3f5; --fg2:rgba(242,243,245,.62); --fg3:rgba(242,243,245,.34);
+  --line:rgba(242,243,245,.14); --accent:#8fb3ff; --accent2:rgba(143,179,255,.22);
+  --warn:#ffb36b; --ok:#8ff0c4;
+  --sans:"Inter",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace; --serif:"Instrument Serif",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);width:1080px;height:1920px;overflow:hidden}
+body{font-family:var(--sans);color:var(--fg);-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+.abs{position:absolute}
+.mono{font-family:var(--mono);font-feature-settings:"tnum" 1,"zero" 1}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400}
+.hide{opacity:0}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* griglia a punti discreta */
+.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(242,243,245,.07) 1.2px,transparent 1.3px);background-size:60px 60px;background-position:30px 30px}
+
+/* HUD fisso: dentro le safe zone (y 150..1540, x < 940) */
+.hud{position:absolute;inset:0;pointer-events:none}
+.hud .corner{position:absolute;width:34px;height:34px;border:1.5px solid var(--fg3)}
+.hud .c1{left:60px;top:160px;border-right:0;border-bottom:0}
+.hud .c2{right:150px;top:160px;border-left:0;border-bottom:0}
+.hud .c3{left:60px;bottom:390px;border-right:0;border-top:0}
+.hud .c4{right:150px;bottom:390px;border-left:0;border-top:0}
+.hud .brand{position:absolute;right:170px;top:168px;font:500 24px/1 var(--sans);letter-spacing:.34em;color:var(--fg2)}
+.hud .tag{position:absolute;left:84px;top:172px;font:400 20px/1 var(--mono);letter-spacing:.14em;color:var(--fg3)}
+.hud .tc{position:absolute;left:84px;bottom:398px;font:400 20px/1 var(--mono);letter-spacing:.1em;color:var(--fg3)}
+.hud .concept{position:absolute;right:170px;bottom:398px;font:400 18px/1 var(--mono);letter-spacing:.1em;color:var(--fg3);text-align:right}
+
+/* sottotitoli: fascia bassa dentro la safe zone */
+.sub{position:absolute;left:90px;right:150px;top:1385px;text-align:center;font:400 46px/1.22 var(--sans);color:var(--fg);letter-spacing:-.005em}
+.sub b{font-weight:500}
+.sub i{font-family:var(--serif);font-style:italic;font-size:1.12em;color:var(--accent)}
+.sub .line{position:absolute;left:0;right:0;top:0;opacity:0}
+
+/* titolo grande */
+.title{position:absolute;left:90px;right:150px;text-align:center;font:300 72px/1.08 var(--sans);letter-spacing:-.02em}
+.title i{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.14em}
+
+/* callout card */
+.card{position:absolute;border:1px solid var(--line);background:rgba(7,8,10,.72);padding:18px 22px;border-radius:6px}
+.card .k{font:400 18px/1 var(--mono);letter-spacing:.16em;color:var(--accent);margin-bottom:10px}
+.card .v{font:400 30px/1.2 var(--sans);color:var(--fg)}
