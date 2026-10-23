@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Preventivo 2026-01 · Cantina Liseo · LIMITLESS</title>
+<style>
+@font-face { font-family: 'Inter'; font-weight: 300; src: url(fonts/inter-latin-300-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-style: italic; src: url(fonts/inter-latin-400-italic.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 500; src: url(fonts/inter-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 700; src: url(fonts/inter-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Cormorant'; font-weight: 500; src: url(fonts/cormorant-garamond-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Cormorant'; font-weight: 600; src: url(fonts/cormorant-garamond-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Cormorant'; font-weight: 500; font-style: italic; src: url(fonts/cormorant-garamond-latin-500-italic.woff2) format('woff2'); }
+@font-face { font-family: 'Cormorant'; font-weight: 600; font-style: italic; src: url(fonts/cormorant-garamond-latin-600-italic.woff2) format('woff2'); }
+
+@page { size: A4; margin: 0; }
+:root {
+  --wine: #6e1a2a;
+  --wine-soft: #f6eef0;
+  --wine-line: #e4cdd2;
+  --ink: #1d1a1b;
+  --mute: #6b6466;
+  --line: #e7e3e4;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; }
+body {
+  font-family: 'Inter', sans-serif; color: var(--ink);
+  font-size: 10.4pt; line-height: 1.45;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.page {
+  width: 210mm; height: 297mm; padding: 12mm 16mm 10mm; position: relative;
+  overflow: hidden; page-break-after: always; display: flex; flex-direction: column;
+}
+.page:last-child { page-break-after: auto; }
+
+/* intestazione */
+.head { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 4.5mm; border-bottom: 1.4pt solid var(--wine); }
+.brand { font-family: 'Inter'; font-weight: 600; letter-spacing: .32em; font-size: 15pt; color: var(--ink); }
+.brand small { display: block; font-weight: 400; letter-spacing: .02em; font-size: 8.4pt; color: var(--mute); margin-top: 1mm; }
+.contacts { text-align: right; font-size: 7.9pt; line-height: 1.5; color: var(--mute); }
+.contacts b { color: var(--ink); font-weight: 500; }
+.head2 { display: flex; justify-content: space-between; font-size: 8pt; color: var(--mute); padding-top: 2.2mm; }
+
+.meta { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 5.5mm; }
+h1 { font-family: 'Cormorant'; font-weight: 600; font-size: 27pt; line-height: 1.05; color: var(--ink); }
+h1 em { color: var(--wine); font-style: italic; }
+.for { margin-top: 2mm; font-size: 10.4pt; color: var(--mute); }
+.for b { color: var(--ink); font-weight: 600; }
+.docinfo { text-align: right; font-size: 8.6pt; line-height: 1.6; color: var(--mute); }
+.docinfo b { color: var(--ink); font-weight: 600; }
+
+h2 { font-size: 8.2pt; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: var(--wine); margin: 4.4mm 0 2.2mm; }
+
+.goal { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; align-items: stretch; }
+.quote { border-left: 2pt solid var(--wine); padding: 1mm 0 1mm 4.5mm; }
+.quote p { font-family: 'Cormorant'; font-style: italic; font-weight: 500; font-size: 14.5pt; line-height: 1.22; }
+.quote span { display: block; margin-top: 2mm; font-size: 8pt; color: var(--mute); }
+.goal .plan { font-size: 9.9pt; }
+.goal .plan b { font-weight: 600; }
+
+.ideas { display: grid; grid-template-columns: 1fr 1fr; gap: 2.8mm; }
+.idea { border: 0.8pt solid var(--line); border-radius: 2.4mm; padding: 2.6mm 3.8mm; }
+.idea .n { font-family: 'Cormorant'; font-weight: 600; font-size: 14pt; color: var(--wine); line-height: 1; margin-right: 1.6mm; }
+.idea h3 { font-size: 10.2pt; font-weight: 600; margin: 0 0 0.8mm; display: flex; align-items: baseline; }
+.idea p { font-size: 9pt; color: #3a3537; line-height: 1.4; }
+.note { font-size: 7.6pt; color: var(--mute); margin-top: 2mm; }
+
+.packs { display: grid; grid-template-columns: 1fr 1.12fr 1fr; gap: 3mm; align-items: stretch; }
+.pack { border: 0.8pt solid var(--line); border-radius: 2.6mm; padding: 4mm 3.6mm 3.6mm; display: flex; flex-direction: column; }
+.pack.rec { border: 1.4pt solid var(--wine); background: var(--wine-soft); position: relative; }
+.badge { position: absolute; top: -2.6mm; left: 50%; transform: translateX(-50%); background: var(--wine); color: #fff; font-size: 7pt; font-weight: 600; letter-spacing: .14em; padding: 0.9mm 2.6mm; border-radius: 4mm; white-space: nowrap; }
+.pack h3 { font-size: 11pt; letter-spacing: .12em; font-weight: 700; }
+.pack .who { font-size: 8.3pt; color: var(--mute); margin: 0.4mm 0 1.8mm; }
+.pack ul { list-style: none; font-size: 8.8pt; line-height: 1.38; flex: 1; }
+.pack li { padding: 0.6mm 0 0.6mm 3.4mm; position: relative; border-top: 0.5pt solid var(--line); }
+.pack.rec li { border-top-color: var(--wine-line); }
+.pack li::before { content: ''; position: absolute; left: 0; top: 2.2mm; width: 1.4mm; height: 1.4mm; border-radius: 50%; background: var(--wine); }
+.price { margin-top: 2mm; padding-top: 2mm; border-top: 0.8pt solid var(--line); }
+.pack.rec .price { border-top-color: var(--wine-line); }
+.price s { font-size: 9pt; color: var(--mute); }
+.price .big { font-size: 19pt; font-weight: 600; line-height: 1.1; color: var(--ink); }
+.pack.rec .price .big { color: var(--wine); }
+.price .big small { font-size: 9pt; font-weight: 500; color: var(--mute); }
+.price .tag { font-size: 7.8pt; color: var(--mute); }
+
+.boxnote { margin-top: 3.4mm; padding: 2.6mm 3.6mm; border-radius: 2mm; background: #faf8f8; border: 0.6pt solid var(--line); font-size: 8.8pt; }
+.boxnote b { color: var(--wine); font-weight: 600; }
+
+.foot { margin-top: auto; padding-top: 3mm; border-top: 0.6pt solid var(--line); display: flex; justify-content: space-between; font-size: 7.4pt; color: var(--mute); }
+
+/* pagina 2 */
+.two { display: grid; grid-template-columns: 1.05fr 1fr; gap: 6mm; }
+.sum { border: 1.4pt solid var(--wine); border-radius: 2.6mm; padding: 3.6mm 4mm; background: var(--wine-soft); }
+.sum h3 { font-size: 11pt; letter-spacing: .12em; font-weight: 700; color: var(--wine); }
+.sum table { width: 100%; border-collapse: collapse; margin-top: 2mm; font-size: 8.9pt; }
+.sum td { padding: 0.9mm 0; border-top: 0.5pt solid var(--wine-line); vertical-align: top; }
+.sum td:last-child { text-align: right; white-space: nowrap; padding-left: 3mm; }
+.sum .tot td { font-weight: 600; border-top: 1pt solid var(--wine); padding-top: 1.6mm; font-size: 9.6pt; }
+.sum .small { font-size: 7.9pt; color: var(--mute); margin-top: 1.6mm; }
+
+table.extra { width: 100%; border-collapse: collapse; font-size: 8.9pt; }
+table.extra td { padding: 1.05mm 0; border-top: 0.5pt solid var(--line); vertical-align: top; }
+table.extra td:last-child { text-align: right; white-space: nowrap; padding-left: 3mm; font-weight: 500; }
+
+ul.list { list-style: none; font-size: 8.9pt; line-height: 1.42; }
+ul.list li { padding: 0.55mm 0 0.55mm 3.6mm; position: relative; }
+ul.list li::before { content: ''; position: absolute; left: 0; top: 2.2mm; width: 1.5mm; height: 0.8pt; background: var(--wine); }
+ul.list b { font-weight: 600; }
+
+.guar { margin-top: 4mm; padding: 2.6mm 3.6mm; border-left: 2pt solid var(--wine); background: #faf8f8; font-size: 8.9pt; }
+.guar b { color: var(--wine); }
+.iva { margin-top: 3.4mm; font-size: 8pt; color: var(--ink); padding: 2.2mm 3mm; border: 0.6pt solid var(--line); border-radius: 1.6mm; }
+
+.sign { margin-top: 4mm; border: 0.8pt solid var(--ink); border-radius: 2.4mm; padding: 3.4mm 4mm; }
+.sign h3 { font-size: 8.2pt; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: var(--wine); margin-bottom: 2.4mm; }
+.choices { display: flex; gap: 6mm; font-size: 9.4pt; flex-wrap: wrap; }
+.choice { display: flex; align-items: center; gap: 1.8mm; white-space: nowrap; }
+.cb { width: 3.6mm; height: 3.6mm; border: 0.9pt solid var(--ink); border-radius: 0.6mm; flex: none; }
+.lines { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 6mm; margin-top: 7mm; font-size: 8pt; color: var(--mute); }
+.lines div { border-top: 0.7pt solid var(--ink); padding-top: 1.2mm; }
+</style>
+</head>
+<body>
+
+<!-- ======================= PAGINA 1 ======================= -->
+<section class="page" id="p1">
+  <div class="head">
+    <div class="brand">LIMITLESS<small>di Riccardo Pasquini · Miradolo Terme (PV) · P.IVA 03051470189</small></div>
+    <div class="contacts"><b>+39 339 795 8873</b> · limitlessmediaweb@gmail.com<br>PEC info@pec.limitlessmedia.it · <b>limitlessmedia.it</b></div>
+  </div>
+
+  <div class="meta">
+    <div>
+      <h1>Gestione social per <em>Liseo</em></h1>
+      <div class="for">Per <b>Stefano Sbop</b> · Cantina Liseo · Coredo, Val di Non (TN)</div>
+    </div>
+    <div class="docinfo">Preventivo <b>n. 2026-01</b><br>Data <b>23/10/2026</b><br>Valido 15 giorni, fino al <b>07/11/2026</b></div>
+  </div>
+
+  <h2>L'obiettivo</h2>
+  <div class="goal">
+    <div class="quote">
+      <p>«Vogliamo farci conoscere dai giovani, su Instagram e TikTok. Con un pubblico più adulto conta l'assaggio.»</p>
+      <span>Stefano, nella chiamata con LIMITLESS</span>
+    </div>
+    <div class="plan">
+      Con i giovani l'assaggio arriva <b>dopo</b>: prima incontrano il Liseo sul telefono.
+      Il lavoro è <b>spiegare in pochi secondi cos'ha di diverso un PIWI</b>, mostrare vigna e persone,
+      dare un motivo per provarlo. Voi mandate foto e video, noi li montiamo e li pubblichiamo con ritmo.
+    </div>
+  </div>
+
+  <h2>4 idee per partire</h2>
+  <div class="ideas">
+    <div class="idea"><h3><span class="n">01</span>«Cos'è un PIWI», in 15 secondi</h3>
+      <p>Vitigno resistente, Solaris scelto nel 2015 con la Fondazione Mach, niente chimica di sintesi. Detto semplice, senza parole da sommelier.</p></div>
+    <div class="idea"><h3><span class="n">02</span>Il nome Liseo</h3>
+      <p>Un vino dedicato al nonno: la storia del nome in 20 secondi, con le foto di famiglia che vorrete condividere.</p></div>
+    <div class="idea"><h3><span class="n">03</span>«Tutto a mano», a puntate</h3>
+      <p>L'anno in vigna a 830 metri: potatura, sfalcio, vendemmia fatti da voi. Una puntata al mese, chi segue torna a vedere.</p></div>
+    <div class="idea"><h3><span class="n">04</span>Il Liseo all'aperitivo</h3>
+      <p>Il vino nel momento in cui lo beve un ventenne: come servirlo (10–11 °C) e con cosa, in un reel "tra amici" per TikTok.</p></div>
+  </div>
+  <div class="note">I dati sulla cantina vengono da fonti pubbliche (liseo.it, Enovely, Tastetrentino): li verifichiamo con voi prima di pubblicarli.</div>
+
+  <h2>I pacchetti mensili</h2>
+  <div class="packs">
+    <div class="pack">
+      <h3>ESSENZIALE</h3>
+      <div class="who">Per esserci con costanza.</div>
+      <ul>
+        <li>6 contenuti: 4 reel + 2 post</li>
+        <li>IG e FB, reel anche su TikTok</li>
+        <li>Piano mensile da approvare</li>
+                <li>Riepilogo con 3 numeri</li>
+      </ul>
+      <div class="price"><s>249 €/mese</s><div class="big">199 € <small>/mese</small></div><div class="tag">prezzo lancio, primi 3 mesi</div></div>
+    </div>
+    <div class="pack rec">
+      <div class="badge">CONSIGLIATO</div>
+      <h3>SOCIAL</h3>
+      <div class="who">Per farsi conoscere dai giovani.</div>
+      <ul>
+        <li>8 contenuti: 6 reel + 2 caroselli</li>
+        <li>Instagram, Facebook, TikTok</li>
+        <li>1 storia a settimana</li>
+        <li>Commenti 2 volte a settimana</li>
+        <li>Piano mensile da approvare</li>
+        <li>Report mensile breve</li>
+      </ul>
+      <div class="price"><s>449 €/mese</s><div class="big">349 € <small>/mese</small></div><div class="tag">prezzo lancio, primi 3 mesi</div></div>
+    </div>
+    <div class="pack">
+      <h3>CRESCITA</h3>
+      <div class="who">Per spingere vendite e visite.</div>
+      <ul>
+        <li>12 contenuti, incluso 1 spot</li>
+        <li>Instagram, Facebook, TikTok</li>
+        <li>2 storie a settimana</li>
+        <li>Commenti 3 volte a settimana</li>
+        <li>Sponsorizzate (budget escluso)</li>
+        <li>Report + call di 20 minuti</li>
+      </ul>
+      <div class="price"><s>799 €/mese</s><div class="big">649 € <small>/mese</small></div><div class="tag">prezzo lancio, primi 3 mesi</div></div>
+    </div>
+  </div>
+  <div class="boxnote"><b>Avvio incluso</b> se confermate entro il 07/11/2026 (valore 149 €): sistemazione dei profili, grafica coordinata, piano del primo mese.</div>
+
+  <div class="foot"><span>LIMITLESS · Preventivo 2026-01 · Cantina Liseo</span><span>1 / 2</span></div>
+</section>
+
+<!-- ======================= PAGINA 2 ======================= -->
+<section class="page" id="p2">
+  <div class="head">
+    <div class="brand">LIMITLESS<small>di Riccardo Pasquini · Miradolo Terme (PV) · P.IVA 03051470189</small></div>
+    <div class="contacts"><b>+39 339 795 8873</b> · limitlessmediaweb@gmail.com<br>PEC info@pec.limitlessmedia.it · <b>limitlessmedia.it</b></div>
+  </div>
+
+  <div class="two" style="margin-top:5mm">
+    <div>
+      <h2 style="margin-top:0">Il pacchetto consigliato in sintesi</h2>
+      <div class="sum">
+        <h3>SOCIAL</h3>
+        <table>
+          <tr><td>6 reel + 2 caroselli, dal vostro materiale</td><td>8 al mese</td></tr>
+          <tr><td>Instagram, Facebook e TikTok</td><td>3 canali</td></tr>
+          <tr><td>Storie</td><td>1 a settimana</td></tr>
+          <tr><td>Risposte ai commenti</td><td>2 volte a sett.</td></tr>
+          <tr><td>Piano mensile + report breve</td><td>incluso</td></tr>
+          <tr><td>Avvio: profili, grafica, piano 1° mese</td><td><s>149 €</s> incluso</td></tr>
+          <tr class="tot"><td>Prezzo lancio, mesi 1–3</td><td>349 €/mese</td></tr>
+        </table>
+        <div class="small">Dal 4° mese 449 €/mese (listino), mese per mese; oppure 399 €/mese bloccati con impegno di altri 6 mesi.</div>
+      </div>
+    </div>
+    <div>
+      <h2 style="margin-top:0">Extra, solo se servono</h2>
+      <table class="extra">
+        <tr><td>Contenuto in più (reel o post)</td><td>39 €</td></tr>
+        <tr><td>Spot in più di 20–30", dal vostro materiale</td><td>99 €</td></tr>
+        <tr><td>Campagna sponsorizzata singola (budget escluso)</td><td>79 €</td></tr>
+        <tr><td>Giornata di riprese in cantina (trasferta di circa 3 h 30 per tratta)</td><td>su preventivo</td></tr>
+      </table>
+      <div class="guar"><b>Garanzia sull'avvio:</b> se il piano del primo mese non vi convince nemmeno dopo una revisione, vi restituiamo il primo mese e ci fermiamo lì.</div>
+    </div>
+  </div>
+
+  <h2>Come lavoriamo</h2>
+  <ul class="list">
+    <li><b>Materiale:</b> foto e video li mandate voi, anche dal telefono, entro il 25 del mese prima. Vi diciamo noi cosa riprendere.</li>
+    <li><b>Piano mensile da approvare:</b> calendario con idee, testi e date. Si pubblica solo dopo il vostro ok; 1 giro di modifiche sul piano e 1 su ogni contenuto.</li>
+    <li><b>Accessi:</b> Instagram e Facebook con Meta Business Suite, LIMITLESS aggiunta come partner: nessuna password condivisa, accesso revocabile quando volete. TikTok con una modalità concordata insieme. I messaggi privati restano a voi.</li>
+    <li><b>Uso dell'AI dichiarato:</b> strumenti di intelligenza artificiale per montaggio, sottotitoli e bozze dei testi; ogni contenuto è controllato a mano. Niente immagini della vigna o del vino generate con l'AI e spacciate per vere.</li>
+  </ul>
+
+  <h2>Condizioni</h2>
+  <ul class="list">
+    <li><b>Durata minima 3 mesi</b>, poi mese per mese; disdetta con 30 giorni di preavviso, anche su WhatsApp.</li>
+    <li><b>Pagamento mensile anticipato:</b> il primo mese si paga alla conferma e vale come acconto; i successivi entro il 5 del mese.</li>
+    <li><b>Contenuti:</b> restano utilizzabili da voi sui vostri canali, anche dopo la fine del servizio. <b>Il materiale che ci mandate resta di vostra proprietà</b> e lo usiamo solo per Liseo.</li>
+    <li>L'eventuale budget delle sponsorizzate è escluso e si paga direttamente a Meta o TikTok.</li>
+  </ul>
+  <div class="iva">Operazione in franchigia IVA effettuata ai sensi dell'art. 1, commi 54-89, L. 190/2014 (regime forfettario). IVA non applicabile.</div>
+
+  <div class="sign">
+    <h3>Accettazione</h3>
+    <div class="choices">
+      <span class="choice"><i class="cb"></i>Essenziale 199 €/mese</span>
+      <span class="choice"><i class="cb"></i>Social 349 €/mese</span>
+      <span class="choice"><i class="cb"></i>Crescita 649 €/mese</span>
+    </div>
+    <div class="choices" style="margin-top:2.6mm">
+      <span style="color:var(--mute)">Partenza:</span>
+      <span class="choice"><i class="cb"></i>lunedì 3 novembre 2026</span>
+      <span class="choice"><i class="cb"></i>lunedì 10 novembre 2026</span>
+    </div>
+    <div class="lines"><div>Data</div><div>Luogo</div><div>Firma (Stefano Sbop)</div></div>
+  </div>
+
+  <div class="foot"><span>LIMITLESS · Preventivo 2026-01 · Cantina Liseo</span><span>2 / 2</span></div>
+</section>
+</body>
+</html>
